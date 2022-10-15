@@ -1,9 +1,9 @@
-import pygame, pygame.gfxdraw
-import time
+import win32api
+import win32gui
 
-screen = pygame.display.set_mode((800, 600), pygame.FULLSCREEN)
-screen.fill((0, 0, 0))
-pygame.gfxdraw.circle(screen, 400, 300, 200, (255, 255, 255))
-pygame.display.flip()
-
-time.sleep()
+#Pega o contexto gráfico para o Desktop
+dc = win32gui.GetDC(0)
+while True:
+    win32gui.MoveToEx(dc,0,0)
+    win32gui.LineTo(dc,1366,768)
+    
