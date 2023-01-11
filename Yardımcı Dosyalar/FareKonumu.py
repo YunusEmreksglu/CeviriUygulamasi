@@ -26,4 +26,4 @@ keyboard.on_release_key('e',printreleaseKey,suppress=False)
 keyboard.on_press_key('e',printPressedKey,suppress=False)
  
 while True:
-    keyboard.wait('win')
+    keyboard.wait()

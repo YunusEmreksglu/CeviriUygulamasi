@@ -18,7 +18,7 @@ while True:
     if cv2.waitKey(1)==ord('ç'):
         b = pytesseract.image_to_string(img_final,lang ='jpn')
         a = re.sub(r'\n', ' ', b)
-        print("\n\n\n\n"+translator.translate(a,src='ja',dest='tr').text)
+        print("\n\n\n\n"+translator.translate("私",src='ja',dest='tr').text)
         print("\n"+a)
         
     

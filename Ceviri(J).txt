@@ -1,0 +1,7 @@
+Japonca:
+
+N: トルコ  
+C: Türkiye
+
+N: 広島 --> 新大孤  
+C: Hiroşima --> Shintaiko
