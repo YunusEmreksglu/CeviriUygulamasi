@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "detect-text-in-images-390411",
+  "private_key_id": "353a2e27ee64cc9369b757d047300c2a73d31eea",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCS4D3zOR0HRmgz\nYuAzOR9H0b6RL8g9Xc4pRfoNlMg27jDkOE6IeZWZRyCI2m85EEM7H6cGC940BazN\n+qg/1kgvUrhaZX0b66MgkXZRLpRw5XWoqkAhfvgOFg2X3W3R4XmpCYULHM5wK5D4\nmuwAtv6ZhpQJ4Pw+ClEmRn+L7X6oxcZysadCpDJl7m07F7m2W+0d/LlBckyUJYCd\nJT7NxLeeBf5mjw4GuZNF4FES7hq1YocTfFag0Y23GncoDVEUZI4uKDJKXlAsEe4v\n6uAJ50YwUwAcyxhi+lRkpbyKBudcpHqrtINlrrrnlWU/yKh76+qHmvglJktNwFK2\ntodSRMELAgMBAAECggEAB410Yg9ryLX8IbhR4xBq5VyJuhmE6HLsaP7qLsyZxwlU\nhkfG8gmegbVAnQjucza83ktwYUU29eHc0vKyuCWirJxKUoupdUgWqVQRi3cjtvJ1\nrGikx5Qp2T+VD1wZi5NWmDSfHMUscGQtHjuJKzg9u1NKRX/GOMJ7DcbORDnAK5l7\n9eyVFnsDNcQrJCBpcD/1j86u11/oxKemn58x5DZzdcLqK/8S3FchOIK/kXz36i2p\nA34NiufXXmd/5J+ExZuXJ5D83YtpsaFOIv2j0ynn6qElT63hjqZRtyM5sTVvOW0s\nEODWfdGJm8bMy5JT1hzz2/dn/3Jq5Mn3NqzvRLWDYQKBgQDLU86VF9OHH2FNdPlc\nEL4a6OmWFtN6zDOv8Yu2c79wRtvN9n8A+5gihyl2ImZH1RxawKOKGYpFIMPLTs4/\nt3YFq/H60oYU2sGjMEJllW4/DTzpUXZCQ3E9wJOtXoJLq5bUg0EPppvo+sEWb54Z\nw0hzG6323GtCP9f/lfGIENF6IwKBgQC47LWRQDq9JN7K+agL2+ab/InleqE9TcMT\nbBt3/QOh37hmTaHWZMTy+ao9ODM+qIxs9S1/H7W3BVUhINl5Ml07Pa5cCuP88pYL\nxhgVg2HaRwNBHqZUCCXZ6SBt8Mmz71BiZNmYnX67pMi3xIjMXvDM4z7luF3gjLPo\nuqmAkvoH+QKBgQDA/8wXuYYPvLmfzGjl+v54jJ0s2n3jEfH+EEmN5lDRQnFiD5h+\nVlMScznn6L8tcBx6CGEztQqKk49GbIdZ88sTlyMZ8rtTEFK9lBFyW2VKdEZdMfYO\n7/WNqD6FUjBbo4SINA6NzJgxjdO6eDiaO8OJf7yhlpg5SmC9OpcJkO1GAQKBgQCs\n34x1NwgyXc9xDKbOP0p8ND9tKZCmUJW3CG89YmgM4anu6VALrrR3OHKvPGSbhNGR\n4jogBzLG39NPXvgu1qhVgzoGjZ/Ijbc7VnqZUfMeLRibvd1b3SoVZlyMqnbFIUmS\nUhkhFMqu/EMvmCkSdQbDYwUfl5UbIC3nuOhQbBYVcQKBgQCW+JGuF6zi+Igblc9p\n2U8YidBZKSHGQMQcXNMPOx/UeWKRcrppZQJ/rTNcOAG0phG1VP+Njm4JoWMUUj/C\n5spVpPJ68Xusf/Qr5gwAaDjS7jWdnyHuZq4lmhDZXaWy17qiGDDcIk1nudei3XCV\no4VWx4bWuApsXMh2RAcAtVbquA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "detect-text-im-images@detect-text-in-images-390411.iam.gserviceaccount.com",
+  "client_id": "117177575860324962920",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/detect-text-im-images%40detect-text-in-images-390411.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

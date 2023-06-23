@@ -2,7 +2,7 @@ import keyboard
 import pyautogui
 import re
 import pytesseract 
-from PIL import  ImageGrab
+from PIL import  ImageGrab, ImageTk
 from googletrans import Translator
 import numpy as np
 import cv2 
@@ -10,10 +10,18 @@ import win32gui, win32api, win32con
 import tkinter  as tk
 from tkinter import *
 from tkinter import ttk
+import tkinter
 import pystray
 import PIL.Image
+import PIL
 from array import *
 import datetime
+from google.cloud import vision
+import os
+import asyncio
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="Keys.json"
+client = vision.ImageAnnotatorClient()
 
 import Kütüphane.DilKutuphanesi as DilKutuphanesi
 
@@ -24,12 +32,29 @@ image = PIL.Image.open("translateicon.jpg")
 
 Durumu="başlatılıyor"
 DilAyarlari=DilKutuphanesi.DilAyarlari(0) ## tr [0] / jp [1]
-Diller=DilAyarlari[5]
+Diller = DilAyarlari[5]
 DilBiligileri=DilKutuphanesi.CeviriDilBilgileri()
 CeviriDili=DilBiligileri[1]
+Diller[1] = Diller[1] +" ✓"
 Acik=True
 enbl=False
 
+def detect_text(path):
+
+    with open(path, "rb") as image_file:
+        content = image_file.read()
+
+    image2 = vision.Image(content=content)
+
+    response = client.text_detection(image=image2)
+    texts = response.text_annotations
+    txt=""
+    ln=1
+    for text in texts:
+        
+        txt= txt + text.description
+        break
+    return txt
 
 def ayarlar():
     def ComboxS(event):
@@ -96,14 +121,19 @@ def Ceviri():
         img_final=cv2.cvtColor(img_np,cv2.COLOR_BGR2RGB)
         img.save('test_image.png') 
 
-        b = pytesseract.image_to_string(img_final,lang =dil[0])
+        """b = pytesseract.image_to_string(img_final,lang =dil[0])"""
+        b = detect_text('test_image.png')
         """jpn/eng"""
 
         Normal = re.sub(r'\n', ' ', b).replace('|','I')
+        if(dil[0] == "jpn"):
+           Normal = Normal.replace(' ','')
+
         if(b!=""):
             print("\n"+Normal)
             Ceviri=translator.translate(Normal,src=dil[1],dest=DilAyarlari[6]).text
             print(Ceviri)
+            ##Lb1.insert("\n"+Normal+"\n"+Ceviri)
             Not(Ceviri,Normal,dil[2])
             
             if(len(Ceviri)>200):
@@ -147,9 +177,7 @@ def Cizgi():
         win32gui.LineTo(hdc, xyA[0], xyA[1])
 
         win32gui.ReleaseDC(None, hdc)
-
-        
-        
+  
 
 def Bsayi(sayi1,sayi2):
     Sayi=["",""]
@@ -167,19 +195,51 @@ def Not(CeviriT,NormalT,Dil):
 
 def Log(text):
     f = open("Log.txt", "a",encoding='utf8')
-    f.write("hata: "+text+" | Tarih: "+str(datetime.datetime.now()))
+    f.write(" \n hata: "+text+" | Tarih: "+str(datetime.datetime.now()))
     f.close()
+
+def pencere():
+
+    global Lb1
+
+    root = Tk()
+
+    root.geometry("740x340")
+
+
+
+    image1 = PIL.Image.open("gri.jpg")
+    img1 = ImageTk.PhotoImage(image1)
+    label1 = tkinter.Label(image=img1,height = 300, width = 253)
+    label1.image = img1
+    label1.place(x=10, y=10)
+
+    image2 = PIL.Image.open("test_image.png")
+    img2 = ImageTk.PhotoImage(image2)
+    label2 = tkinter.Label(image=img2,height = 280, width = 233)
+    label2.image = img2
+    label2.place(x=20, y=20)
+
+    T = Text(root, height = 5, width = 52)
+    T.place(x=300, y=230)
+
+
+    Lb1 = Listbox(root,height = 10, width = 69)
+    Lb1.place(x=300, y=15)
+
+    root.mainloop()
 
 def iconUpdate():
     icon.menu=pystray.Menu(
+    pystray.MenuItem("Diller",pystray.Menu(pystray.MenuItem(Diller[1],on_clicked),pystray.MenuItem(Diller[0],on_clicked))),
     pystray.MenuItem(DilAyarlari[0],on_clicked,enabled=not(enbl)),
     pystray.MenuItem(DilAyarlari[1],on_clicked,enabled=enbl),
-    pystray.MenuItem(f'{DilAyarlari[2]}({Diller[int(CeviriDili[3])]})',on_clicked),
+    ##pystray.MenuItem(f'{DilAyarlari[2]}({Diller[int(CeviriDili[3])]})',on_clicked),
     pystray.MenuItem(DilAyarlari[3],on_clicked),
     )
 
 def on_clicked(icon,item):
-    global Durumu, Acik, enbl
+    global Durumu, Acik, enbl,CeviriDili
     if str(item) == DilAyarlari[0]:
         Durumu="durduruluyor"
         enbl=True
@@ -190,23 +250,38 @@ def on_clicked(icon,item):
         enbl=False
         iconUpdate()
 
-    elif str(item) == f'{DilAyarlari[2]}({Diller[int(CeviriDili[3])]})':
-        ayarlar()
+    ##elif str(item) == f'{DilAyarlari[2]}({Diller[int(CeviriDili[3])]})':
+    ##    ayarlar()
 
     elif str(item) == DilAyarlari[3]:
         icon.stop()
         Acik=False
 
+    if str(item) == Diller[1]:
+        Diller[0] = Diller[0].split(" ")[0]
+        Diller[1] = Diller[1] +" ✓"
+        CeviriDili=DilBiligileri[1]
+        iconUpdate()
 
+    if str(item) == Diller[0]:
+        Diller[1] = Diller[1].split(" ")[0]
+        Diller[0] = Diller[0] +" ✓"
+        CeviriDili=DilBiligileri[0]
+        iconUpdate()
+
+"""def App:
+    async def exec(self):
+        self.window = pencere(asyncio.get_event_loop())
+        await self.window.show()"""
+
+
+##asyncio.run(App().exec())
 print("Ready")
+
 
 tkr='+'
 keyboard.on_release_key('ctrl',printreleaseKey,suppress=False)
 keyboard.on_press_key('ctrl',printPressedKey,suppress=False)
-
-
-
-
 
 
 icon = pystray.Icon("",image)
@@ -214,6 +289,10 @@ icon = pystray.Icon("",image)
 iconUpdate()
 
 icon.run()
+
+
+pencere()
+
 
 while Acik:
     keyboard.wait()

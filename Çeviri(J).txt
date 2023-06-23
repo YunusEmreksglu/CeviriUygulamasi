@@ -1,0 +1,73 @@
+
+
+N: チンポがとても 大きいこと以外は 普通の女の子! 
+C: Büyük aleti dışında normal bir kız!
+
+N: 始スこ まクれ るか ! ルら ラ私 イの フ が 
+C: Başlayabilir mi?
+
+N: わたし、 竿田 珍子 今日から○校生!! 
+C: Ben, Chinko Kaeda, bugünden itibaren ○ okul öğrencisiyim!!
+
+N: 今笑わ 今日から○校生= 日田た か珍し 
+C: Şimdi gülüyorum Bugünden itibaren ○ okul öğrencisi = Takashi Hita
+
+N: わたし、 竿田 珍子 今日から○校生! 
+C: Ben, Chinko Kaeda, bugünden itibaren ○ okul öğrencisiyim!
+
+N: 普大チ 通きン のいポ 女こが のとと 子以て ! 外も は 
+C: Ortaokul öğrencisiyim ve bir çocuğum var!
+
+N: 今笑わ わたし、 竿 田 「珍子」 今日から○校生!! 
+C: Şu an gülüyorum, ben Kanata "Chinko" Bugünden itibaren ○ okul öğrencisiyim!!
+
+N: ic """ja/ MS 1 OUTPUT DEB processing line 1 of eback (most recent ca le "C:\Users\yunus\AF exec(line) _le "<string>", line 1 le "<frozen importlit ibuteError: 'NoneType ■der of file ignored わたし。 A ГАЗ 
+C: ic """en/ MS 1 OUTPUT DEB, eback'in 1. satırını işliyor (en son ca le "C:\Users\yunus\AF exec(line) _le "<string>", line 1 le "<frozen importlit ibuteError:' Dosyanın NoneType derleyicisi yoksayıldı I. A ГАЗ
+
+N: 今竿わ 今日から○校生! 日田た 珍 
+C: Şimdi bugünden itibaren ○ okul öğrencisiyim!
+
+N: わたし、竿田珍子今日から○校生! 
+C: Ben Chinko Kaeda, bugünün ○ okul öğrencisiyim!
+
+N: チンポがとても大きいこと以外は普通の女の子! 
+C: Sikinin çok büyük olması dışında sadece normal bir kız!
+
+N: チンポがとても大きいこと以外は普通の女の子! 
+C: Sikinin çok büyük olması dışında sadece normal bir kız!
+
+N: 始スこまクれるか!ルらラ私イのフが 
+C: Başlayabilir misin?
+
+N: チンポがとても大きいこと以外は普通の女の子! 
+C: Sikinin çok büyük olması dışında sadece normal bir kız!
+
+N: 始スこまくれるか!ルらラ私のチが 
+C: Haydi başlayalım! Lulala my chi
+
+N: 始スこまクれるか!ルらラ私イのフが 
+C: Başlayabilir misin?
+
+N: チンポがとても大きいこと以外は普通の女の子! 
+C: Sikinin çok büyük olması dışında sadece normal bir kız!
+
+N: 始スこまクれるか!ルらラ私イのフが 
+C: Başlayabilir misin?
+
+N: ご、ごめんなさい...私... 
+C: Üzgünüm ben...
+
+N: 大丈夫ですか? 
+C: TAMAM?
+
+N: 普チ私通ンのポ竿女が田の大珍子き子!い! 
+C: Ben normal bir kadınım ama kocaman, garip bir çocuğum!
+
+N: 普チ私通ンのポ竿女が田の大珍子き子!い! 
+C: Ben normal bir kadınım ama kocaman, garip bir çocuğum!
+
+N: ご、ごめんなさい...私... 
+C: Üzgünüm ben...
+
+N: 普チ私通ンのポ竿女が田の大珍子き子!い! 
+C: Ben normal bir kadınım ama kocaman, garip bir çocuğum!

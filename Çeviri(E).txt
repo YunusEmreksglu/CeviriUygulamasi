@@ -1,0 +1,67 @@
+
+
+N: 0113H 
+C: 0113H
+
+N: 普大チ 通きン のいポ 女こが のとと 子以て ! 外も は 
+C: 普大チ 通きン のいポ 女こが のとと 子以て!外もは
+
+N: 普大チ 通きン のいポ 女こが のとと 子以て ! 外も は 
+C: 普大チ 通きン のいポ 女こが のとと 子以て!外もは
+
+N: WE SHALL LEAVE IT UP TO SIR GAOGH, OUR VETERAN TANK! 
+C: BUNU ESKİ TANKIMIZ SIR GAOGH'A BIRAKACAĞIZ!
+
+N: IT IS MY PLEASURE TO WORK WITH YOU ALL... 
+C: HEPİNİZLE ÇALIŞMAKTAN MUTLULUK DUYUYORUM...
+
+N: HER PARTNER SHOULD BE A WARRIOR WITH MASSIVE AMOUNTS OF DEFENSIVE POWER. €/ 
+C: ORTAĞI BÜYÜK MİKTARDA SAVUNMA GÜCÜNE SAHİP BİR SAVAŞÇI OLMALIDIR. €/
+
+N: HER PARTNER SHOULD BE A WARRIOR WITH MASSIVE AMOUNTS OF DEFENSIVE POWER. 
+C: ORTAĞI BÜYÜK MİKTARDA SAVUNMA GÜCÜNE SAHİP BİR SAVAŞÇI OLMALIDIR.
+
+N: I AM DEEPLY SORRY, BUT I CANNOT ACCEPT THIS. 
+C: ÇOK ÜZGÜNÜM AMA BUNU KABUL EDEMİYORUM.
+
+N: SOMEONE FROM A BARBARIC, TYRANNICAL RACE LIKE AN ORC IS... 
+C: BİR ORK GİBİ BARAR, GÜÇLÜ BİR IRKTAN BİRİSİ...
+
+N: YOUR COMPATI BILITY WITH ME IS THE WORST. 
+C: BENİMLE UYUMLULUĞUNUZ EN KÖTÜSÜ.
+
+N: I'M GONNA GET RAPED. 
+C: Tecavüze uğrayacağım.
+
+N: The number of knives that can be thrown when time is stopped, has increased. 
+C: Zaman durduğunda fırlatılabilen bıçak sayısı arttırıldı.
+
+N: You can now attack enemies with conviction. 
+C: Artık düşmanlara inançla saldırabilirsiniz.
+
+N: conviction. 
+C: mahkumiyet.
+
+N: Since I did promise, let me spell it out for you. 
+C: Söz verdiğim için, senin için hecelememe izin ver.
+
+N: That's why Mistress said she had a hunch about who was responsible. 
+C: Bu yüzden Mistress kimin sorumlu olduğuna dair bir önsezisi olduğunu söyledi.
+
+N: She made this world out of my treasures, and left me out of her fun... 
+C: Hazinelerimden bu dünyayı yarattı ve beni eğlencesinden mahrum bıraktı...
+
+N: That's why I've sealed you both in this world. So that you could reflect on your actions. 
+C: Bu yüzden ikinizi de bu dünyaya mühürledim. Böylece eylemlerinizi yansıtabilirsiniz.
+
+N: No, I was pretty much brought here against my will... 
+C: Hayır, buraya iradem dışında getirildim...
+
+N: There is no need to install any third party library. Copy and paste this code and run it with Python to test it yourself. 
+C: Herhangi bir üçüncü taraf kitaplığı kurmaya gerek yoktur. Bu kodu kopyalayıp yapıştırın ve kendiniz test etmek için Python ile çalıştırın.
+
+N: I TOLD YOU TO LET ME OFF SOMEWHERE ON FUNEN ISLAND, DIDN'T I? 
+C: SANA BENİ FUNEN ADASI'NDA BİR YERE BIRAKIN DEDİM, DEĞİL MİYİM?
+
+N: 00000 ✰✰DD Şekiller 4 41 Doldur Boyut 1. Renk 2. Renk 
+C: 00000 ✰✰DD Şekiller 4 41 Doldur Boyut 1. Renk 2. Renk
